@@ -42,9 +42,66 @@
    </TABLE> </center>
 </FORM>
 
+<form name="Calculator">
+<table>
+   <caption> Calculator</caption>
+   <tr>
+    <td>Angka 1 </td> <td>:</td> <input type="number" name="angka1"></td>
+   </tr>
+   
+   <tr>
+    <td>Angka 2 </td> <td>:</td> <input type="number" name="angka2"></td>
+   </tr>
 
+   <tr>
+    <td>hasil </td> <td>:</td> <input type="number" name="hasil"></td>
+   </tr>
+
+   <tr>
+    <td colspan= "3" align= "center">
+    <input class="tombol" type= "button" oneclick= "tambah()" value= " + ">
+    <input class="tombol" type= "button" oneclick= "kurang()" value= " - ">
+    <input class="tombol" type= "button" oneclick= "kali()" value= " * ">
+    <input class="tombol" type= "button" oneclick= "bagi()" value= " / ">
+    </td>
+   </tr>
+</table>
+</form>
 
 </body>
 </html>
+
+<script type= "text / javascript">
+  function tambah(){
+    var angka1=parseFloat(document.calculator.angka1.value);
+    var angka2=parseFloat(document.calculator.angka2.value);
+    var hasil= angka1+angka2;
+    document.calculator.hasil.value=hasil;   
+}
+
+function kurang(){
+    var angka1=parseFloat(document.calculator.angka1.value);
+    var angka2=parseFloat(document.calculator.angka2.value);
+    var hasil= angka1-angka2;
+    document.calculator.hasil.value=hasil;   
+}
+
+function kali(){
+    var angka1=parseFloat(document.calculator.angka1.value);
+    var angka2=parseFloat(document.calculator.angka2.value);
+    var hasil= angka1*angka2;
+    document.calculator.hasil.value=hasil;   
+}
+
+function bagi(){
+    var angka1=parseFloat(document.calculator.angka1.value);
+    var angka2=parseFloat(document.calculator.angka2.value);
+    var hasil= angka1/angka2;
+    document.calculator.hasil.value=hasil;   
+}
+
+</script>
+
+
 
 
